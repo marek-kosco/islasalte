@@ -1,9 +1,65 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title> IslaSalte.com </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>🌸 Isla Salté</title>
+
+  <style>
+    :root {
+      --baby-pink: #ffd6e8;
+    }
+
+    /* Reset + full-viewport layout */
+    html,body {
+      height: 100%;
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: var(--baby-pink);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Centering container */
+    .wrap {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* The thick white square */
+    .square {
+      width: 320px;
+      height: 320px;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 14px solid #ffffff; /* thick white border */
+      box-shadow: 0 16px 40px rgba(0,0,0,0.10);
+      border-radius: 12px; /* slight rounding — remove if you want perfectly sharp corners */
+    }
+
+    /* Emoji size */
+    .emoji {
+      font-size: 6.5rem; /* adjust to make the emoji larger/smaller */
+      line-height: 1;
+      user-select: none;
+    }
+
+    /* Small responsive tweak */
+    @media (max-width: 380px) {
+      .square { width: 260px; height: 260px; border-width: 10px; }
+      .emoji { font-size: 5rem; }
+    }
+  </style>
 </head>
 <body>
-  <h1> 💩 </h1>
+  <div class="wrap">
+    <div class="square" role="img" aria-label="flower emoji in a white square">
+      <div class="emoji"> 🌸 💩 </div>
+    </div>
+  </div>
 </body>
 </html>
