@@ -3,63 +3,110 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>🌸 Isla Salté</title>
+  <title>Isla Salté — A Love Letter to the Sea</title>
 
-  <style>
-    :root {
-      --baby-pink: #ffd6e8;
-    }
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    /* Reset + full-viewport layout */
-    html,body {
-      height: 100%;
-      margin: 0;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background: var(--baby-pink);
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    /* Centering container */
-    .wrap {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    /* The thick white square */
-    .square {
-      width: 320px;
-      height: 320px;
-      background: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 14px solid #ffffff; /* thick white border */
-      box-shadow: 0 16px 40px rgba(0,0,0,0.10);
-      border-radius: 12px; /* slight rounding — remove if you want perfectly sharp corners */
-    }
-
-    /* Emoji size */
-    .emoji {
-      font-size: 6.5rem; /* adjust to make the emoji larger/smaller */
-      line-height: 1;
-      user-select: none;
-    }
-
-    /* Small responsive tweak */
-    @media (max-width: 380px) {
-      .square { width: 260px; height: 260px; border-width: 10px; }
-      .emoji { font-size: 5rem; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="wrap">
-    <div class="square" role="img" aria-label="flower emoji in a white square">
-      <div class="emoji"> 🌸 💩 </div>
-    </div>
+
+<header class="site-header">
+    <a class="logo" href="/">
+      <img src="images/logo.png" alt="Isla Salté logo" class="logo-img">
+    </a>
+
+    <nav class="nav">
+      <a href="#collection">Collection</a>
+      <a href="#project">Project</a>
+      <a href="#follow">Follow</a>
+    </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <img class="hero-bg" src="images/hero.jpg" alt="Isla Salté Sea">
+
+  <div class="hero-content">
+    <p class="hero-subtitle">NOW ARRIVED</p>
+    <h1 class="hero-title">Isla Salté</h1>
+    <p class="hero-tagline">A LOVE LETTER TO THE SEA</p>
   </div>
+</section>
+
+<!-- INTRO SECTION -->
+<section class="intro-section">
+  <h2>When the Sea tells you a story..</h2>
+  <p>
+  We create stories of the sea, people, and nature. Our collections are produced on a small scale, with some crafted from recycled Italian fabrics. We take our time with every stitch, ensuring that each bikini is perfectly made by hand, a reflection of care, patience, and dedication.
+  </p>
+</section>
+
+<!-- SIGNATURE COLLECTION -->
+<section id="collection" class="collection">
+  <h2 class="collection-title">Signature Collection</h2>
+
+  <div class="collection-names">
+    <span>Ophelia</span>
+    <span>Thalassa</span>
+    <span>Amara</span>
+  </div>
+
+  <p class="coming-soon">Coming Soon...</p>
+</section>
+
+<!-- ARTISAN SECTION -->
+<section class="artisan-section">
+  <div class="shells-wrapper">
+
+    <div class="shells-text">
+      <h2>Artisan Craftsmanship</h2>
+      <p>
+        Every piece is carefully made in a single artisan factory in Bali, where local makers are valued, respected, and paid fairly for their craft.
+      </p>
+    </div>
+
+    <div class="shells-img">
+      <img src="images/artisan.jpg" alt="Artisan Makers Bali">
+    </div>
+
+  </div>
+</section>
+
+<!-- SALTY SHELLS PROJECT -->
+<section id="project" class="salty-shells">
+  <div class="shells-wrapper">
+    
+    <div class="shells-text">
+      <h2>Salty Shells Project</h2>
+      <p>
+        Through our Salty Shells Project, we are proud to collaborate with the Turtle Conservation Foundation in Indonesia YPI (<a href="https://yayasanpenyu.org/" target="_blank">https://yayasanpenyu.org/</a>), giving back to the ocean that inspires us. A portion of every purchase supports the protection of sea turtles and their natural habitats, ensuring their survival for generations to come.
+      </p>
+      <p class="impact-text">
+        For us, every piece you wear carries a real impact for the ocean, the earth, and the community behind it.
+      </p>
+    </div>
+
+    <div class="shells-img">
+      <img src="images/turtle.jpg" alt="Sea Turtle">
+    </div>
+
+  </div>
+</section>
+
+
+</main>
+
+<footer id="follow" class="site-footer">
+  <p>Follow our journey — @islasalte</p>
+  <p>&copy; <span id="year"></span> Isla Salté</p>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>

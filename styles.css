@@ -1,0 +1,312 @@
+:root{
+  --max-width:1100px;
+  --accent:#0c6484;
+  --muted:#7b8a8f;
+  font-family: "League Spartan", sans-serif;
+}
+
+/* RESET */
+*{box-sizing:border-box;margin:0;padding:0}
+body{color:#052;line-height:1.4;-webkit-font-smoothing:antialiased}
+
+/* HEADER */
+.site-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  height: 110px;
+  width: auto;
+  display: block;
+}
+
+.nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+.hero-content {
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-subtitle {
+  font-size: 22px;
+  letter-spacing: 6px;
+  margin-bottom: 12px;
+  font-weight: 300;
+}
+
+.hero-title {
+  font-size: clamp(60px, 9vw, 130px);
+  font-weight: 700;
+}
+
+.hero-tagline {
+  font-size: 26px;
+  letter-spacing: 8px;
+  margin-top: 4px;
+  font-weight: 300;
+}
+
+/* INTRO */
+.intro-section {
+  text-align: center;
+  padding: 120px 20px 80px;
+  max-width: 900px;
+  margin: auto;
+  color: black;
+}
+
+.intro-section h2 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.intro-section p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* COLLECTION */
+.collection {
+  text-align: center;
+  padding: 80px 20px 40px;
+  color: black;
+}
+
+.collection-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.collection-names {
+  font-style: italic;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.coming-soon {
+  font-style: italic;
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+/* SALTY SHELLS */
+
+
+.salty-shells h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.salty-shells p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.impact-text {
+  font-style: italic;
+}
+
+/* FOOTER */
+.site-footer {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* MOBILE NAV */
+@media (max-width: 768px) {
+  .logo-img {height: 65px;}
+  .nav a {margin-left: 15px;font-size: 14px;}
+}
+/* 🐢 Salty Shells Section with Image */
+.shells-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+ 
+}
+
+/* text */
+.shells-text {
+  flex: 1;
+  text-align: left;
+}
+
+.shells-text h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: black;
+}
+
+.shells-text p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: black;
+  margin-bottom: 18px;
+}
+/* Italic last line */
+.shells-text .impact-text {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* image */
+.shells-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.shells-img img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Mobile responsive */
+@media (max-width: 900px) {
+  .shells-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .shells-text {
+    text-align: center;
+  }
+
+  .shells-img img {
+    max-width: 100%;
+  }
+}
+/* Artisan Section spacing */
+.artisan-section {
+  text-align: center;
+  padding: 120px 20px;
+  max-width: 1100px;
+  margin: auto;
+  color: black;
+}
+/* ✅ Unified 2-column layout for Artisan + Salty Shells */
+
+.artisan-section,
+.salty-shells {
+  padding: 120px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  color: black;
+}
+
+/* Flex row for text & image */
+.shells-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+/* Text column */
+.shells-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* Image column */
+.shells-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.shells-img img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Typography */
+.shells-text h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.shells-text p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.impact-text {
+  font-style: italic;
+  margin-top: 6px;
+}
+
+/* ✅ Mobile responsive */
+@media (max-width: 900px) {
+  .shells-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .shells-text {
+    text-align: center;
+  }
+
+  .shells-img img {
+    max-width: 100%;
+  }
+}
